@@ -2,3 +2,8 @@
 # Вывести на экран сумму всех элементов.
 
 # TODO: your code here
+list_digits = [-10, -9, -8, -7, -6, -5, -4, -3, -2, -1, 1 , 2, 3, 4, 5, 6, 7, 8, 9, 10]
+sum_digits = 0
+for digit in list_digits:
+    sum_digits += digit
+print ("Сумма всех элементов списка равна: ", sum_digits)
