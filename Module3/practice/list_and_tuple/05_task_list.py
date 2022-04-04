@@ -6,6 +6,12 @@
 fruits = ["яблоко", "банан", "киви", "арбуз"]
 
 # TODO: your code here
+fruits = ["яблоко", "банан", "киви", "арбуз"]
+i=1
+max_length = max(len(fruit) for fruit in fruits)
+for fruit in fruits:
+    print(i, '.', '{0:>{1}}'.format(fruit, max_length))
+    i += 1
 
 # Пример вывода:
 # 1. яблоко
