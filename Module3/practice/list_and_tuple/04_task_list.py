@@ -2,3 +2,10 @@
 # Вывести на экран сумму всех положительных элементов.
 
 # TODO: your code here
+
+list_digits = [-10, -9, -8, -7, -6, -5, -4, -3, -2, -1, 1 , 2, 3, 4, 5, 6, 7, 8, 9, 10]
+total_pos = 0
+for digit in list_digits:
+    if digit > 0:
+        total_pos += digit
+print("Сумма положительных элементов списка: ", total_pos)
