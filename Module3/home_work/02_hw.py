@@ -6,3 +6,9 @@ import random
 numbers = []
 # print(random.randint(10, 20))  # раскомментируйте, чтобы посмотреть работу функции randint
 # TODO: your code here
+import random
+n = int(input('Введите число элементов списка:'))
+numbers = []
+for i in range(n):
+    numbers.append(random.randint(-100, 100))
+    print(numbers)
