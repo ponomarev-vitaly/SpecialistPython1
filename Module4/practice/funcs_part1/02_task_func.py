@@ -13,3 +13,9 @@ print(palindrome(3443))
 print(palindrome(1234541))
 print(palindrome(1234321))
 print(palindrome(77777))
+
+n = '789'
+def palindrome(n):
+    return n[::-1]
+res = palindrome(n)
+print(res)
