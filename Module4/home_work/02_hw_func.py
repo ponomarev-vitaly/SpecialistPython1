@@ -4,10 +4,31 @@
 
 # При решении задачи необходимо использовать функцию расстояния между двумя точками.
 
-def distance(x1, y1, x2, y2):
-    # TODO: тело, которое вы реализовали на практической работе
-    pass
+x1 = input("x1: ")
+x2 = input("x2: ")
+y1 = input("y1: ")
+y2 = input("y2: ")
+x3 = input("x3: ")
+y3 = input("y3: ")
 
 
-# TODO: your code here
-print("Самый короткий отрезок:", ...)  # Выводим название отрезка, например “АС”.
+def distance(p1, p2):
+    return ((x2 - x1) ** 2 + (y2 - y1) ** 2) ** 0.5
+
+
+def distance(p1, p3):
+    return ((x3 - x1) ** 2 + (y3 - y1) ** 2) ** 0.5
+
+
+def distance(p2, p3):
+    return ((x3 - x2) ** 2 + (y3 - y2) ** 2) ** 0.5
+
+
+def min_distance():
+    if distance(p1, p2) > distance(p1, p3) and distance(p2, p3) > distance(p1, p3):
+        return distance(p1, p3)
+    else:
+        return distance(p1, p2)
+
+
+res = min_distance()
